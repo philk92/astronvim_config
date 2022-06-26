@@ -1,5 +1,5 @@
 local config = {
-
+ -- test
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
@@ -116,9 +116,9 @@ local config = {
     treesitter = {
       ensure_installed = { "lua" },
     },
-    ["nvim-lsp-installer"] = {
-      ensure_installed = { "sumneko_lua" },
-    },
+    -- ["nvim-lsp-installer"] = {
+    --   ensure_installed = { "sumneko_lua" },
+    -- },
     packer = {
       compile_path = vim.fn.stdpath "config" .. "/lua/packer_compiled.lua",
     },
