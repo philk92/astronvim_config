@@ -77,7 +77,7 @@ local config = {
     init = {
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
-
+      { "Mofiqul/dracula.nvim" },
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {
