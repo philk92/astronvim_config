@@ -18,7 +18,7 @@ local config = {
   },
 
   -- Set colorscheme
-  colorscheme = "dracula",
+  colorscheme = "tokyonight",
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   options = {
@@ -27,6 +27,7 @@ local config = {
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
+      tokyonight_style = "night",
     },
   },
 
@@ -96,6 +97,7 @@ header = {
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
       { "Mofiqul/dracula.nvim" },
+      { "folke/tokyonight.nvim" },
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {
