@@ -17,7 +17,7 @@ local config = {
     -- },
   },
 
-  -- Set colorscheme
+  -- Set coldorscheme
   colorscheme = "tokyonight",
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
@@ -116,9 +116,9 @@ header = {
       -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
       config.sources = {
         -- Set a formatter
-        null_ls.builtins.formatting.rufo,
+        null_ls.builtins.formatting.prettier,
         -- Set a linter
-        null_ls.builtins.diagnostics.rubocop,
+        -- null_ls.builtins.diagnostics.rubocop,
       }
       -- set up null-ls's on_attach function
       config.on_attach = function(client)
@@ -228,6 +228,7 @@ header = {
   polish = function()
     -- Set key bindings
     vim.keymap.set("n", "<C-s>", ":w!<CR>")
+    vim.keymap.set("n", "<F6>", ":term live-server<CR>")
 
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
