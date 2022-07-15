@@ -18,7 +18,7 @@ local config = {
   },
 
   -- Set coldorscheme
-  colorscheme = "tokyonight",
+  colorscheme = "dracula",
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   options = {
